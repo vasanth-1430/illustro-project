@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 50px;
+}
+
+.poll-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+}
+
+h2 {
+  text-align: center;
+  color: #4e54c8;
+}
+
+.poll-option {
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.bar {
+  background: #e0e0e0;
+  height: 12px;
+  border-radius: 6px;
+  margin-top: 8px;
+}
+
+.fill {
+  background: #4e54c8;
+  height: 100%;
+  width: 0%;
+  border-radius: 6px;
+  transition: width 0.4s ease-in-out;
+}
+
+button {
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  margin-left: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to right, #3e41a5, #7b80da);
+  box-shadow: 0 0 10px rgba(142, 148, 251, 0.6);
+}
+
+.total-votes {
+  text-align: center;
+  margin-top: 30px;
+  font-weight: bold;
+  color: #555;
+}
